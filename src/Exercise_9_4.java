@@ -3,15 +3,17 @@
  */
 public class Exercise_9_4 {
 
-    public static boolean isPalindrome(String word) {
+    /**
+     * Write a recursive method named isPalindrome that takes a String and
+     returns a boolean indicating whether the word is a palindrome.
+     *
+     */
 
-       // String newWord = word;
+    public static boolean isPalindrome(String word) {
 
         if (word.length() % 2.0 != 0) {
             return false;
         }
-
-        System.out.println(word);
         if (word.charAt(0) != word.charAt(word.length() - 1)) {
             return false;
         }else {
@@ -25,7 +27,7 @@ public class Exercise_9_4 {
 
     public static void main(String[] args){
 
-        boolean s=isPalindrome("abccttcgba");
+        boolean s=isPalindrome("abccccba");
         System.out.print(s);
     }
 }
