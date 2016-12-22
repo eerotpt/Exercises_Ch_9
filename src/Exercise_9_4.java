@@ -10,6 +10,7 @@ public class Exercise_9_4 {
      */
 
     public static boolean isPalindrome(String word) {
+        word=word.toLowerCase();
 
         if (word.length() % 2.0 != 0) {
             return false;
@@ -27,7 +28,7 @@ public class Exercise_9_4 {
 
     public static void main(String[] args){
 
-        boolean s=isPalindrome("abccccba");
+        boolean s=isPalindrome("Abccccba");
         System.out.print(s);
     }
 }
