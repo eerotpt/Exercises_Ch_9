@@ -40,7 +40,8 @@ public class Exercise_9_4a {
         System.out.println(middle(a));
         System.out.println(length(a));
         printString(a);
-        System.out.print(reverseString(a));
+        System.out.println(reverseString(a));
+        printBackwards(a);
     }
     /**
      * 2. Using these methods, and without using any other String methods,
@@ -58,8 +59,20 @@ public class Exercise_9_4a {
     /**
      * 3. Again using only these methods, write a method called printBackward
      that does the same thing as printString but that displays the string
-     backward (again, one character per line).???
+     backward (again, one character per line).
      */
+    public static void printBackwards(String a){
+        if (a.length()==1){
+            System.out.println(a);
+        }else {
+            String word=first(a)+middle(a);
+            for (int i=a.length()-1;i>=1;i--){
+                a=rest(a);
+            }
+            System.out.println(a);
+            printBackwards(word);
+        }
+    }
     /**
      *4. Now write a method called reverseString that takes a string as a pa-
      rameter and that returns a new string as a return value. The new string
