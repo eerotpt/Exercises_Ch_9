@@ -31,7 +31,7 @@ public class Exercise_9_3 {
         }
         return count;
     }
-    //Checking method parenthesesCheck
+    // Checking method parenthesesCheck
     public static void main(String[]args){
         String s = "((3 + 7) * 2)";
         System.out.println(parenthesesCheck(s,1));
